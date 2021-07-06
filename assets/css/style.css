@@ -429,7 +429,7 @@ h3 {
         padding-top: 0;
         min-height: 600px;
         width: 100%;
-        background-image: url("../images/illustration-editor-mobile.svg");
+        background-image: url("../images/illustration-editor-desktop.svg");
         background-size: contain;
         background-repeat: no-repeat;
         flex-basis: 50%;
@@ -532,5 +532,37 @@ h4 {
     }
     .phones img {
         max-height: 400px;
+    }
+}
+
+.laptop {
+    padding-top: 72%;
+    height: 0;
+    width: 100%;
+    background-image: url("../images/illustration-laptop-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width:1200px) {
+    .laptop {
+        margin-top: 0px;
+        padding-top: 0;
+        min-height: 600px;
+        width: 100%;
+        background-image: url("../images/illustration-laptop-desktop.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-basis: 50%;
+        background-position: center;
+    }
+    .textandcircle.noreverse {
+        flex-direction: row;
+    }
+    .text.noreverse {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 165px;
     }
 }
