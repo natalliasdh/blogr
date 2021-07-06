@@ -543,6 +543,11 @@ h4 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
+}
+
+.designed.noreverse {
+    margin-top: 50px;
 }
 
 @media only screen and (min-width:1200px) {
@@ -565,4 +570,46 @@ h4 {
         margin-left: 0;
         margin-right: 165px;
     }
+}
+
+footer {
+    padding: 75px 24px;
+    background-color: #24242C;
+    color: white;
+    font-size: 15px;
+    border-radius: 0px 100px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+footer img {
+    width: 101px;
+    height: 40px;
+    margin-bottom: 72px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+footer a.main {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
 }
