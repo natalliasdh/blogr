@@ -1,4 +1,5 @@
 const myLinks = document.querySelector('#myLinks');
+const myBurger = document.querySelector('#burger');
 const productMenu = document.querySelector('.product');
 const productItem = document.querySelector('#product');
 const companyMenu = document.querySelector('.company');
@@ -10,8 +11,14 @@ function myFunction() {
 
     if (myLinks.style.display == 'flex') {
         myLinks.style.display = 'none';
+        myBurger.style.backgroundImage = "url('assets/images/icon-hamburger.svg')";
+        myBurger.style.width = "32px";
+        myBurger.style.height = "18px";
     } else {
         myLinks.style.display = 'flex';
+        myBurger.style.backgroundImage = "url('assets/images/icon-close.svg')";
+        myBurger.style.width = "26px";
+        myBurger.style.height = "26px";
     }
 
 }
