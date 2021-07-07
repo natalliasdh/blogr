@@ -582,6 +582,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 footer a {
@@ -612,4 +613,36 @@ footer a.main {
     margin-top: 50px;
     font-size: 12px;
     text-align: center;
+}
+
+@media only screen and (min-width:1200px) {
+    footer {
+        padding: 70px 165px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 100px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    footer a.main {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .attribution {
+        margin-top: 50px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #footernav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 50%;
+    }
 }
