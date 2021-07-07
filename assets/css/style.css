@@ -116,6 +116,10 @@ nav {
     margin-bottom: 12px;
 }
 
+#innernav a:hover {
+    font-size: 16px;
+}
+
 .product,
 .company,
 .connect {
@@ -126,6 +130,12 @@ nav {
 .company,
 .connect {
     flex-direction: column;
+}
+
+#product a:hover,
+#company a:hover,
+#connect a:hover {
+    text-decoration: underline;
 }
 
 .loginsignup {
@@ -155,8 +165,14 @@ nav {
     margin-top: 24px;
     color: white;
     font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Ubuntu', sans-serif;*/
     font-size: 16px;
+}
+
+.signup:hover {
+    background-image: unset;
+    background-color: white;
+    color: #FF3E55;
 }
 
 h1 {
@@ -177,7 +193,7 @@ h1 {
     width: 137px;
     height: 48px;
     border-radius: 38px;
-    font-family: 'Ubuntu', sans-serif;
+    /*  font-family: 'Ubuntu', sans-serif;*/
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
@@ -210,6 +226,11 @@ h1 {
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width:1200px) {
+    #product a:hover,
+    #company a:hover,
+    #connect a:hover {
+        text-decoration: underline;
+    }
     header {
         background-size: 1200px, auto;
         padding: 63px 167px 156px 167px;
@@ -325,7 +346,7 @@ h1 {
         width: 137px;
         height: 48px;
         border-radius: 38px;
-        font-family: 'Ubuntu', sans-serif;
+        /* font-family: 'Ubuntu', sans-serif;*/
         font-size: 16px;
         font-weight: 700;
         cursor: pointer;
@@ -645,4 +666,8 @@ footer a.main {
         justify-content: space-between;
         flex-basis: 50%;
     }
+}
+
+button {
+    cursor: pointer;
 }
